@@ -11,20 +11,20 @@ class App extends Component {
         {id: 3, value: 0},
         {id: 4, value: 0},
     ]
- }
+ };
+
  handleIncrement = counter => {
      const counters = [...this.state.counters];
      const index = counters.indexOf(counter);
      counters[index] = {...counter};
      counters[index].value++;
      this.setState({ counters});
- }
+ };
 
  handleDelete = counterId => {
      const counters = this.state.counters.filter(c => c.id !== counterId);
-     this.setState({counters})
-     
- }
+     this.setState({counters}) 
+ };
 
  handleReset = () =>{
      const counters = this.state.counters.map(c =>{
