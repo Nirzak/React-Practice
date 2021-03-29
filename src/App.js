@@ -42,7 +42,7 @@ class App extends Component {
     <main className="container">
      <Counters
      counters={this.state.counters}
-     OnReset={this.handleReset}
+     onReset={this.handleReset}
      onIncrement={this.handleIncrement}
      onDelete={this.handleDelete}/>
      </main>
