@@ -1,18 +1,18 @@
 import React from 'react';
-//import ReactDOM from 'react-dom';
-import {render} from 'react-dom';
+import ReactDOM from 'react-dom';
+//import {render} from 'react-dom'; can be declared like that to direct pass dom without writing ReactDOM.render()
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css';
 
-const root = document.querySelector("#root");
-render(
-   //<React.StrictMode>
-   //<App />
-   React.createElement("h1", {}, "Online Supermarket"), root
- //</React.StrictMode>,
-  //document.getElementById('root')
+//const root = document.querySelector("#root");
+ReactDOM.render(
+   <React.StrictMode>
+   <App />
+ </React.StrictMode>,
+  //React.createElement("h1", {}, "Online Supermarket"), root
+  document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function
