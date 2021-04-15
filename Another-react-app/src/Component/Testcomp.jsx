@@ -4,7 +4,7 @@ class Testcomp extends Component {
         super(props)
         }
     render() { 
-        const element = createElement("h2");
+        const element = React.createElement("h1", {className: "hero-title"}, "Welcome to our supermarket");
         return (<div className="comptext">
         <h3>First Component</h3>
             {this.props.displaytext}
